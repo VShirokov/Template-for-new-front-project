@@ -1,0 +1,78 @@
+@media screen and (max-width: 1140px)
+	@supports (display: -ms-grid) or (display: grid)
+		.container
+			///width: 1006px
+		.productsGroup
+			width: 1040px!important
+			grid-column-gap: 40px!important
+			.wrap
+				margin-left: 0
+
+	.container
+		//width: 1006px
+	.productsGroup
+		justify-content: unset
+	.wrap
+		width: 320px
+		float: left
+		margin-left: 23px
+		&:first-child
+			margin-left: 0
+@media screen and (max-width: 1045px)
+	@supports (display: -ms-grid) or (display: grid)
+		.productsGroup
+			width: 1000px!important
+			grid-column-gap: 20px!important
+	.container
+		//width: 720px
+	.productsGroup
+		justify-content: space-between
+		.wrap
+			width: 320px
+			margin-left: 0
+
+@media screen and (max-width: 1024px)
+	@supports (display: -ms-grid) or (display: grid)
+		.productsGroup
+			width: 1000px!important
+			grid-column-gap: 20px!important
+			grid-template-columns: repeat(2, 320px)
+			grid-template-rows: repeat(2, 500px)
+			grid-row-gap: 40px
+	.container
+		//width: 720px
+	.productsGroup
+		justify-content: space-between
+		.wrap
+			width: 320px
+			margin-left: 0
+@media screen and (max-width: 768px)
+	.container
+		//width: 768px
+	.productsGroup
+		flex-flow: column nowrap
+		justify-content: space-around
+		width: 100%
+		.wrap
+			//width: calc(1/2*100% - (1 - 1/2)*40px);
+			float: left
+			//margin-left: 80px
+			&:first-child
+				margin-left: 0
+@media screen and (max-width: 480px)
+	@supports (display: -ms-grid) or (display: grid)
+		.container
+			//width: 500px
+		.productsGroup
+			grid-template-columns: 1fr
+			grid-template-rows: repeat(3, 480px)
+			grid-row-gap: 40px
+			.wrap
+				width: 320px
+	.container
+		width: 500px
+	.productsGroup
+		flex-flow: column nowrap
+		justify-content: space-around
+		.wrap
+			width: 320px

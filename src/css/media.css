@@ -1,0 +1,87 @@
+@media screen and (max-width: 1140px) {
+  @supports (display: grid) {
+    .productsGroup {
+      width: 1040px !important;
+      grid-column-gap: 40px !important; }
+      .productsGroup .wrap {
+        margin-left: 0; } }
+  .productsGroup {
+    -webkit-box-pack: unset;
+    -webkit-justify-content: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset; }
+  .wrap {
+    width: 320px;
+    float: left;
+    margin-left: 23px; }
+    .wrap:first-child {
+      margin-left: 0; } }
+
+@media screen and (max-width: 1045px) {
+  @supports (display: grid) {
+    .productsGroup {
+      width: 1000px !important;
+      grid-column-gap: 20px !important; } }
+  .productsGroup {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .productsGroup .wrap {
+      width: 320px;
+      margin-left: 0; } }
+
+@media screen and (max-width: 1024px) {
+  @supports (display: grid) {
+    .productsGroup {
+      width: 1000px !important;
+      grid-column-gap: 20px !important;
+      grid-template-columns: repeat(2, 320px);
+      grid-template-rows: repeat(2, 500px);
+      grid-row-gap: 40px; } }
+  .productsGroup {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .productsGroup .wrap {
+      width: 320px;
+      margin-left: 0; } }
+
+@media screen and (max-width: 768px) {
+  .productsGroup {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    width: 100%; }
+    .productsGroup .wrap {
+      float: left; }
+      .productsGroup .wrap:first-child {
+        margin-left: 0; } }
+
+@media screen and (max-width: 480px) {
+  @supports (display: grid) {
+    .productsGroup {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 480px);
+      grid-row-gap: 40px; }
+      .productsGroup .wrap {
+        width: 320px; } }
+  .container {
+    width: 500px; }
+  .productsGroup {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .productsGroup .wrap {
+      width: 320px; } }

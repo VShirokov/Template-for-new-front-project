@@ -1,0 +1,1 @@
+setTimeout(function(){var e,i,t=100;$(".mainBlock__text").each(function(){i=String($(this).html()),e=i.length,i=e<=t?i:i.substring(0,t+1)+"...",$(this).html(i)})},500);

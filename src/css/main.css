@@ -1,0 +1,14 @@
+.mainBlock {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #ec274f;
+  position: relative;
+  color: #000; }
+  .mainBlock__text {
+    font-size: 30px;
+    width: 750px; }
